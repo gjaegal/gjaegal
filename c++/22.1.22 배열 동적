@@ -1,3 +1,11 @@
-#include <iostream> int main() { std::cout << "Enter a positive integer: "; int length; std::cin >> length; int *array = new int[length]; // 배열 버전 new 연산자를 사용한다. 배열 길이는 상수가 아니여도 된다. std::cout << "I just allocated an array of integers of length " << length << '\n'; array[0] = 5; // 요소 0을 값 5로 설정 delete[] array; // 배열 할당 해제를 위해 배열 버전 delete 연산자를 사용한다. return 0; }
+#include <iostream> 
+int main() { 
+  std::cout << "Enter a positive integer: ";
+  int length; std::cin >> length; 
+  int *array = new int[length]; // 배열 버전 new 연산자를 사용한다. 배열 길이는 상수가 아니여도 된다. 
+  std::cout << "I just allocated an array of integers of length " << length << '\n'; array[0] = 5; // 요소 0을 값 5로 설정 
+  delete[] array; // 배열 할당 해제를 위해 배열 버전 delete 연산자를 사용한다. 
+  return 0; 
+  }
 
 출처: https://boycoding.tistory.com/205 [소년코딩]
